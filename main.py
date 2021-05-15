@@ -1,10 +1,16 @@
 #Write your code below this line 👇
 def prime_checker(number):
-    result = "It's a prime number."
+    is_prime = True
+    
     for divisor in range (2, number):
         if number % divisor == 0 :
-            result = "It's not a prime number."
-
+            is_prime = False
+            
+    if is_prime:
+        result = "It's a prime number."
+    else:
+        result = "It's not a prime number."
+        
     print(result)
 
 
